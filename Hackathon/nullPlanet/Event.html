@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <head>
+            <title>Event Creation</title>
+            <link rel="stylesheet" href="Rocket.css">
+        </head>
+        <div id="sidebar"></div>
+        <form action="/" style="border:1px solid #ccc" method="post">
+        <div class="container">
+            <h1>Create Event</h1>
+            <p>Please fill in this form to create an event.</p>
+            <hr>
+                  
+                <label for="Location"><b>Location</b></label>
+                <input type="text" placeholder="Enter location." name="Location" required>
+                  
+                <label for="StartTime"><b>Event Start Time</b></label>
+                <input type="datetime-local" placeholder="Enter event start time." name="StartTime" required>
+                  
+                <label for="EndTime"><b>Event End Time</b></label>
+                <input type="datetime-local" placeholder="Enter event end time." name="EndTime" required>
+                
+                <label for="EventDescription"><b>Description of the Event</b></label>
+                <input type="text" placeholder="Enter a description of the event." name="EventDescription" required>
+                  
+                <label for="Experience"><b>Years of Experience Required</b></label>
+                <input type="int" placeholder="Enter 0 if entry level." name="Experience" required>
+                  
+                <input type="hidden" name="type" value="CreateEvent">
+                  
+                <div class="clearfix">
+                    <button type="cancel" class="cancelbutton">Cancel</button>
+                    <button type="submit" class="signupbutton">Create Event</button>
+                </div>
+        </div>
+        </form>
+                
+        <script srcc = "ROCKET.js"></script>
+     </body>
+</html>

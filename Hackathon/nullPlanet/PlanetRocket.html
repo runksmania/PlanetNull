@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VOLUNQUERY</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href ="ROCKET.css">
+    </head>
+    <body>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="toggleSidebar()">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </div>
+            <ul>
+                <li><h1> About Us</h1></li>
+                <li> Home </li>
+                <li> Calendar </li>
+                <li> Log In </li>
+                <li> Sign Up </li>
+            </ul>
+        </div>
+        <!-- This opens login-->
+        <div class="login"> </div>
+        
+        
+        <div class="divcalendar">
+
+        <div id="calendaroverallcontrols">
+        <!-- <div id="year"></div> -->
+
+        <div id="calendarmonthcontrols">
+            <a id="btnPrevYr" href="#" title="Previous Year"> 
+                <span><<</span>
+            </a>
+
+            <a id="btnPrev" href="#" title="Previous Month">
+                <span><</span>
+            </a>
+
+        <!-- <input type="button" src="images/btnprevmonth.png" alt="Submit" id="btnPrev"/>-->
+
+        <!-- <div id="month"></div>-->
+
+        <div id="monthandyear"></div>
+
+        <!--<input type="button" src="images/btnnextmonth.png" alt="Submit" id="btnNext"/>-->
+
+            <a id="btnNext" href="#" title="Next Month">
+                <span>></span>
+            </a>
+
+            <a id="btnNextYr" href="#" title="Next Year">
+                <span>>></span>
+            </a>      
+        </div> 
+        </div>
+
+        <div id="divcalendartable"></div>
+        <script src = "ROCKET.js"></script>
+    </body>
+</html>

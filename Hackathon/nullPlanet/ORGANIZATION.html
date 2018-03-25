@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Create Organization</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ROCKET.css">
+    </head>
+    <body>
+        <div id="sidebar"></div>
+        <form action="/" method="post">
+            <div class="container">
+                <h1>Create Organization</h1>
+                <p>Please fill out this form to add an organization</p>
+                <hr>
+                
+                <label for ="COMPANYNAME"><b> Company Name</b></label>
+                <input type="text" placeholder="Enter Company" name="COMPANYNAME">
+                
+                <label for="MISSIONSTATEMENT"><b>Mission Statement</b></label>
+                <input type="text" placeholder="Enter Statement" name="MISSIONSTATEMENT">
+                
+                <label for=""><b>Username</b></label>
+                <input type="text" placeholder="Create Username" name="Username">
+                
+                <label for="WEBSITELINK"><b> Website </b></label>
+                <input type="text" placeholder="Enter Link" name="WEBSITELINK">
+                
+                <label for="NONPROFIT"><b> Is this a NonProfit Organization? (fill in circle if yes)</b></label>
+                <input type="radio" name="NONPROFIT" value="NONPROFIT> NonPofit<br>
+                   
+                 
+                 <input type="hidden" name="type" value="CreateAccount">
+
+            
+                <div class="clearfix">
+                    <button type="cancel" class="cancelbutton"> Cancel </button>
+                    <button type="submit" class="signupbutton"> Create Organization </button>
+                </div>
+            </div>
+        </form>
+              
+    </body>
+</html>

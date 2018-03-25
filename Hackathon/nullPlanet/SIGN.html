@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ROCKET.css">
+    </head>
+    <body>
+        <div id="sidebar"> </div>
+        <form action="/" method="post">
+            <div class="container">
+                <h1 align="center">Create an account</h1>
+                <p>For Organizations and Volunteers</p>
+                <hr>
+                
+                <label for ="name"><b>Full Name </b></label>
+                <input type="text" placeholder="Enter Name" name="name">
+                
+                <label for="age"><b>Age</b></label>
+                <input type="text" placeholder="Enter Age" name="age">
+                
+                <label for="Username"><b>Username</b></label>
+                <input type="text" placeholder="Create Username" name="Username">
+                
+                <label for="email"><b>Email Adress</b></label>
+                <input type="text" placeholder="Enter Email" name="email">
+                
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Create Password" name="password">
+                
+                <label for="rpassword"><b>Confirm Password</b></label> 
+                <input type="password" placeholder="Re-enter Password" name="rpassword">
+                
+                 <label for="phone"><b>Phone Number</b></label>
+                 <input type="text" placeholder="Enter Phone Number" name="phone">
+                 
+                 <input type="hidden" name="type" value="CreateAccount">
+
+            
+                <div class="clearfix">
+                    <button type="cancel" class="cancelbutton"> Cancel </button>
+                    <button type="submit" class="signupbutton">Create Account</button>
+                </div>
+            </div>
+        </form>
+        
+        <script src = "ROCKET.js"></script>
+    </body>
+</html>

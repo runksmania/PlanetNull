@@ -1,0 +1,68 @@
+INSERT INTO Organizations 
+(
+CompanyName, 
+MissionStatement, 
+NonProfit
+)
+
+Values
+(
+'Test',
+'stuff here',
+1
+);
+
+SELECT * FROM Organizations;
+
+SELECT * FROM Users;
+
+SELECT * FROM Events;
+
+SELECT Users.Id FROM Users
+WHERE username = 'michael';
+
+SELECT Salt FROM Users 
+WHERE Id = 'michael';
+
+SELECT HashPassword FROM Users
+WHERE username = 'michael';
+
+INSERT INTO Auth
+(
+UserId, 
+OrganizationId
+) 
+
+VALUES
+(
+2,
+6
+);
+
+INSERT INTO Events 
+(
+Location,
+WageInfo,
+StartTime, 
+EndTime, 
+OrganizationId, 
+EventDescription,  
+EventCreatorId, 
+CreatedTime, 
+Paid, 
+Experience
+) 
+
+VALUES
+(
+'Costco',
+NULL,
+50000,
+51000,
+6,
+'Stuff is happening',
+2,
+4554548,
+1,
+0
+);

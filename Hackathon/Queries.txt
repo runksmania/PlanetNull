@@ -1,0 +1,31 @@
+SELECT * FROM PlanetRocket.dbo.Events;
+
+SELECT * FROM PlanetRocket.dbo.Organizations;
+
+SELECT * FROM PlanetRocket.dbo.Users;
+
+SELECT * FROM PlanetRocket.dbo.Auth;
+
+INSERT INTO PlanetRocket.dbo.Events
+VALUES ('HSU', 1, '$12.50', 1, 1521916812, 1521911512, 4, 
+'Event Description goes here', 1521916812, 1521916812, 3);
+
+INSERT INTO PlanetRocket.dbo.Organizations
+VALUES ('Individual', NULL, NULL);
+
+INSERT INTO PlanetRocket.dbo.Organizations
+VALUES ('Test Company', 'Love people', 1);
+
+INSERT INTO PlanetRocket.dbo.Users
+VALUES ('Michael', 23);
+
+INSERT INTO PlanetRocket.dbo.Auth
+VALUES (2, 3, 4, 1);
+
+DELETE PlanetRocket.dbo.Auth;
+DELETE PlanetRocket.dbo.Organizations;
+DELETE PlanetRocket.dbo.Events;
+DELETE PlanetRocket.dbo.Users;
+
+SELECT b.CompanyName, a.Location, a.EventDescription, a.WageInfo FROM PlanetRocket.dbo.Events a
+INNER JOIN PlanetRocket.dbo.Organizations b ON a.OrganizationId = b.Id;

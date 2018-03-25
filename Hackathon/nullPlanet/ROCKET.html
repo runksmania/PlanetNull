@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ROCKET.css">
+    </head>
+    <body>
+        <div id="sidebar"> 
+        </div>
+        
+    
+    <h1>
+        <form action ="/" method = post>
+            <div class="container">
+                <h1>
+                    Log In
+                </h1>
+                <label for ="Username"><b>Username </b></label>
+                <input type="text" placeholder="Enter Username" name="Username">
+                
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password">                   
+                <!-- returns type-->
+                <input type ="hidden" name="type" value="Login">
+                <div class="clearfix">
+                    <button type="submit" class="signupbutton">Submit</button>
+                    <button type="cancel" class="cancelbutton">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </h1>
+        <script src = "ROCKET.js"></script>
+    </body>
+</html>
